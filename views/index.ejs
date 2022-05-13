@@ -1,30 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%= title %></title>
-</head>
+  </head>
 
-<body>
-    </ul>
-    <h1>Hello World!</h1>
-    <p>Welcome to My Site</p>
-    <h2>Halo <%= nama %></h2>
-
-    <h4>Daftar Mahasiswa</h4>
-    <% if (mahasiswa.length < 1) { %>
-    <p>Data mahasiswa masih kosong</p>
-    <% } else {%>
-    <% mahasiswa.forEach(mhs => { %>
-    <ul>
-        <li>Nama : <%= mhs.nama %></li>
-        <li>Email : <%= mhs.email %></li>
-    </ul>
-    <% }) %>
-    <% } %>
-</body>
-
+  <body>
+    <h4 class="text-center">Halo <%= nama %></h4>
+    <h1 class="col text-center">PLC</h1>
+    <h2 class="col text-center">Penjelasan singkat tentang PLC</h2>
+  </body>
 </html>

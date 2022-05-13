@@ -37,27 +37,12 @@ app.use(flash());
 
 //Halaman Home
 app.get("/", (req, res) => {
-  const mahasiswa = [
-    {
-      nama: "Sandhika Galih",
-      email: "sandhikagalih@gmail.com",
-    },
-    {
-      nama: "Erik",
-      email: "erik@gmail.com",
-    },
-    {
-      nama: "Doddy",
-      email: "doddy@gmail.com",
-    },
-  ];
   res.render("index", {
     layout: "layouts/main-layout",
     nama: "Teo",
     title: "Halaman Home",
-    mahasiswa,
   });
-  console.log("ini halaman home");
+  console.log("connected");
 });
 
 //halaman about
@@ -120,18 +105,6 @@ app.post(
 );
 
 //*proses delete contact
-// app.get("/contact/delete/:nama", async (req, res) => {
-//   const contact = await Contact.findOne({ nama: req.params.nama });
-//   if (!contact) {
-//     res.status(404);
-//     res.send("<h1>404</h1>");
-//   } else {
-//     Contact.deleteOne({ nama: req.params.nama }).then((result) => {
-//       req.flash("msg", "Data contact berhasil dihapus!");
-//       res.redirect("/contact");
-//     });
-//   }
-// });
 app.delete("/contact", (req, res) => {
   Contact.deleteOne({ nama: req.body.nama }).then((result) => {
     req.flash("msg", "Data contact berhasil dihapus!");
