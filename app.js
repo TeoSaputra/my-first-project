@@ -46,10 +46,10 @@ app.get("/", (req, res) => {
 });
 
 //halaman about
-app.get("/about", (req, res) => {
-  res.render("about", {
+app.get("/dokumentasi", (req, res) => {
+  res.render("dokumentasi", {
     layout: "layouts/main-layout",
-    title: "Halaman About",
+    title: "Halaman Dokumentasi",
   });
 });
 
