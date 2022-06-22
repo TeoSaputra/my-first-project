@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="col text-center">
-      <h1>Data Input dan Output PLC</h1>
+      <h1>Data Input dan Output PLC Zelio</h1>
       <h2>INPUT</h2>
       <table class="table">
         <thead>
@@ -27,7 +27,8 @@
             <td>I1, I2, dst.</td>
             <td>Input NO (Normally Open)</td>
             <td>
-              Input berupa saklar yang apabila dinyalakan maka akan menutup
+              Input berupa saklar yang apabila ditekan/dinyalakan maka saklar
+              akan menutup.
             </td>
           </tr>
           <tr>
@@ -43,7 +44,8 @@
             <td>i1, i2, dst.</td>
             <td>Input NC (Normally Close)</td>
             <td>
-              Input berupa saklar yang apabila dinyalakan maka akan membuka
+              Input berupa saklar yang apabila ditekan/dinyalakan maka saklar
+              akan membuka.
             </td>
           </tr>
           <tr>
@@ -58,7 +60,9 @@
             </td>
             <td>M1, M2, dst.</td>
             <td>Relay Input NO (Normally Open)</td>
-            <td>Relay</td>
+            <td>
+              Saklar yang dimana saat tegangan masuk maka saklar akan menutup.
+            </td>
           </tr>
           <tr>
             <th scope="row">4</th>
@@ -72,7 +76,9 @@
             </td>
             <td>i1, i2, dst.</td>
             <td>Relay Input NC (Normally Close)</td>
-            <td>Relay</td>
+            <td>
+              Saklar yang dimana saat tegangan masuk maka saklar akan membuka.
+            </td>
           </tr>
           <tr>
             <th scope="row">5</th>
@@ -86,7 +92,10 @@
             </td>
             <td>T1, T2, dst.</td>
             <td>Timer Input NO (Normally Open)</td>
-            <td>Timer</td>
+            <td>
+              Memiliki prinsip kerja dengan relay NO, hanya saja dengan delay
+              waktu yang bisa diatur.
+            </td>
           </tr>
           <tr>
             <th scope="row">6</th>
@@ -100,7 +109,10 @@
             </td>
             <td>t1, t2, dst.</td>
             <td>Timer Input NC (Normally Close)</td>
-            <td>Timer</td>
+            <td>
+              Memiliki prinsip kerja dengan relay NC, hanya saja dengan delay
+              waktu yang bisa diatur.
+            </td>
           </tr>
           <tr>
             <th scope="row">7</th>
@@ -114,7 +126,9 @@
             </td>
             <td>C1, C2, dst.</td>
             <td>Counter Input NO (Normally Open)</td>
-            <td>Counter</td>
+            <td>
+              Saat perhitungan sesuai target, maka akan menutup secara otomatis.
+            </td>
           </tr>
           <tr>
             <th scope="row">8</th>
@@ -128,7 +142,9 @@
             </td>
             <td>c1, c2, dst.</td>
             <td>Counter Input NC (Normally Close)</td>
-            <td>Counter</td>
+            <td>
+              Saat perhitungan sesuai target, maka akan membuka secara otomatis.
+            </td>
           </tr>
         </tbody>
       </table>
