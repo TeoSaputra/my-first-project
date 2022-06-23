@@ -5,25 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%= title %></title>
+    <style>
+      li {
+        margin-bottom: -10px;
+      }
+      .sumber {
+        display: inline;
+        text-align: right;
+      }
+
+      .penerapan h2 {
+        text-align: center;
+        margin-top: 50px;
+      }
+    </style>
   </head>
 
   <body>
-    <h4 class="text-center">Halo <%= nama %></h4>
+    <!-- <h4 class="text-center">Halo <%= nama %></h4> -->
     <h1 class="col text-center">PLC</h1>
     <h2 class="col text-center">Penjelasan singkat tentang PLC</h2>
     <br />
-    <div>
-      <img src="img/PLC.jpg" class="img-thumbnail" width="150" height="100" />
-      <p>
+    <div class="main1">
+      <img src="img/PLC.jpg" class="img-thumbnail" width="200" height="150" />
+      <p style="display: inline-block; width: 800px; margin-left: 10px">
         Programmable Logic Controllers (PLC) dirancang untuk menggantikan suatu
         rangkaian relay sequensial dalam suatu sistem kontrol. Selain dapat
         diprogram, alat ini juga dapat dikendalikan, dan dioperasikan oleh
         pengguna yang tidak memiliki pengetahuan di bidang pengoperasian
         komputer secara khusus.
       </p>
+    </div>
 
-      <p>Sebuah PLC dapat melakukan fitur - fitur berikut ini:</p>
-      <ol class="list-group list-group-numbered">
+    <div class="main2">
+      <p style="margin-top: 10px">
+        Sebuah PLC dapat melakukan fitur - fitur berikut ini:
+      </p>
+      <ol
+        class="list-group list-group-numbered"
+        style="margin-bottom: 10px; margin-top: -15px"
+      >
         <li class="list-group-item border-0">
           Programmable, menunjukkan kemampuan dalam hal memori untuk menyimpan
           program yang telah dibuat yang dengan mudah diubah-ubah fungsi atau
@@ -39,7 +60,6 @@
           sehingga menghasilkan output yang diinginkan.
         </li>
       </ol>
-
       <p>
         Cara kerja sebuah PLC adalah menerima sinyal masukan proses yang
         dikendalikan lalu melakukan serangkaian instruksi logika terhadap sinyal
@@ -47,6 +67,17 @@
         menghasilkan sinyal keluaran untuk mengendalikan aktuator atau peralatan
         lainnya.
       </p>
+    </div>
+
+    <div class="sumber">
+      <p>
+        Sumber:
+        <a href="https://www.se.com/id/id/faqs/FA378339/">Schneider Electric</a>
+      </p>
+    </div>
+
+    <div class="penerapan">
+      <h2>Penerapan PLC di Industri</h2>
     </div>
   </body>
 </html>
