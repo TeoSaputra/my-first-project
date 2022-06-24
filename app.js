@@ -45,7 +45,15 @@ app.get("/", (req, res) => {
   console.log("connected");
 });
 
-//halaman about
+//halaman pengertian komponen
+app.get("/pKomponen", (req, res) => {
+  res.render("pKomponen", {
+    layout: "layouts/main-layout",
+    title: "Halaman Pengertian Komponen",
+  });
+});
+
+//halaman dokumentasi
 app.get("/dokumentasi", (req, res) => {
   res.render("dokumentasi", {
     layout: "layouts/main-layout",
