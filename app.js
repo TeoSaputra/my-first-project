@@ -53,6 +53,14 @@ app.get("/pKomponen", (req, res) => {
   });
 });
 
+//halaman contoh kasus
+app.get("/simulasi", (req, res) => {
+  res.render("simulasi", {
+    layout: "layouts/main-layout",
+    title: "Contoh Kasus",
+  });
+});
+
 //halaman dokumentasi
 app.get("/dokumentasi", (req, res) => {
   res.render("dokumentasi", {
